@@ -1,0 +1,158 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue';
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  margin-inline: auto;
+
+  @media (width <= 1111px) {
+    zoom: .7;
+  }
+
+  .card {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    position: absolute;
+    left: calc(50% - 75px);
+    top: calc(50% - 100px);
+    -webkit-box-reflect: below 5px
+      linear-gradient(to bottom, transparent 50%, black);
+    transition: transform 0.4s ease, visibility 0.4s ease;
+    transform-style: preserve-3d;
+    perspective: 800px;
+
+    img {
+      width: 70%;
+      height: 70%;
+    }
+
+    &:nth-child(1) {
+      background-color: #e81cff;
+      visibility: visible;
+      z-index: 1;
+      transform: translateZ(0px) translateX(-285px)
+        scale(0.8);
+    }
+    &:nth-child(2) {
+      background-color: #0061ff;
+      visibility: visible;
+      z-index: 2;
+      transform: translateZ(0px) translateX(-285px)
+        scale(0.8);
+    }
+    &:nth-child(3) {
+      background-color: #ff930f;
+      visibility: visible;
+      z-index: 3;
+      transform: translateZ(50px) translateX(-150px)
+        scale(0.9);
+    }
+    &:nth-child(4) {
+      background-color: #fff95b;
+      visibility: visible;
+      z-index: 4;
+      transform: translateZ(100px) translateX(0px) scale(1);
+    }
+    &:nth-child(5) {
+      background-color: #60efff;
+      visibility: visible;
+      z-index: 3;
+      transform: translateZ(50px) translateX(150px)
+        scale(0.9);
+    }
+    &:nth-child(6) {
+      background-color: #aefb2a;
+      visibility: visible;
+      z-index: 2;
+      transform: translateZ(0px) translateX(285px)
+        scale(0.8);
+    }
+    &:nth-child(7) {
+      background-color: #f5ccd4;
+      visibility: visible;
+      z-index: 1;
+      transform: translateZ(0px) translateX(285px)
+        scale(0.8);
+    }
+
+    &:nth-child(8),
+    &:nth-child(9),
+    &:nth-child(10),
+    &:nth-child(11),
+    &:nth-child(12),
+    &:nth-child(13),
+    &:nth-child(14),
+    &:nth-child(15),
+    &:nth-child(16),
+    &:nth-child(17),
+    &:nth-child(18),
+    &:nth-child(19),
+    &:nth-child(20),
+    &:nth-child(21),
+    &:nth-child(22),
+    &:nth-child(23),
+    &:nth-child(24),
+    &:nth-child(25),
+    &:nth-child(26),
+    &:nth-child(27),
+    &:nth-child(28),
+    &:nth-child(29),
+    &:nth-child(30),
+    &:nth-child(31),
+    &:nth-child(32),
+    &:nth-child(33),
+    &:nth-child(34),
+    &:nth-child(35),
+    &:nth-child(36),
+    &:nth-child(37),
+    &:nth-child(38),
+    &:nth-child(39),
+    &:nth-child(40),
+    &:nth-child(41),
+    &:nth-child(42),
+    &:nth-child(43),
+    &:nth-child(44),
+    &:nth-child(45),
+    &:nth-child(46),
+    &:nth-child(47),
+    &:nth-child(48),
+    &:nth-child(49),
+    &:nth-child(50) {
+      visibility: hidden;
+    }
+  }
+}
