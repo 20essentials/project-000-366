@@ -1,3 +1,0 @@
-- **Reference ⬇️**
-  - [Online tutorials video](https://youtu.be/H8y9u0hc3U0?si=ThLPYe7B4WGubVX4)
-  - [Cool Shapes](https://coolshap.es/)

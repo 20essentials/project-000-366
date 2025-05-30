@@ -1,0 +1,15 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Project With Liquid",
+  "main": "script.js",
+  "scripts": {
+    "build": "pnpm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "liquidjs": "10.21.1"
+  }
+}
